@@ -1242,3 +1242,5 @@ It is reported that `npm run build` can fail on machines with no swap space, whi
 ## Something Missing?
 
 If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md)
+#   r e a c t - r e d u x - l i n e - a n i m a t i o n - e x a m p l e  
+ 
