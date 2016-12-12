@@ -1,8 +1,0 @@
-export const SET_OFFSET = 'SET_STROKE_DASHOFFSET'
-
-export const setOffset = offset => {
-  return {
-    type: SET_OFFSET,
-    offset 
-  }
-}
