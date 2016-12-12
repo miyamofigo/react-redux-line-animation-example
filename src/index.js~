@@ -1,0 +1,49 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import { lineAnimationApp } from './reducers'
+import App from './modules/App'
+
+let store = createStore(lineAnimationApp)
+
+/*
+const animateLine = () => {
+  const fps = 30 
+  const requestAnimFrame = (() => callback => current =>
+    setTimeout(() => 
+      callback(current), 1000 / fps))()
+
+  var line = document
+    .getElementById('line')
+
+  let current = 0
+
+  const len = line.x2.baseVal.value -
+    line.x1.baseVal.value
+
+  line.style.strokeDasharray = len + ' ' + len
+  line.style.strokeDashoffset = len
+
+  let draw = current => {
+    line.style.strokeDashoffset = Math
+      .floor(len * (1 - current / fps))
+
+    let next = current + 1
+
+    if (next / fps < 1)
+      requestAnimFrame(draw)(next)
+  }
+
+  draw(current)
+}
+*/
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App/>
+  </Provider>,
+  //document.getElementById('root'),
+  //animateLine
+  document.getElementById('root')
+)

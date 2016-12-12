@@ -1,0 +1,17 @@
+import { SET_STROKE_DASHOFFSET } from '../actions'
+
+const intitialState = {
+  offset: 0 
+}
+
+export const lineAnimationApp = (state = intitialState,
+  action) => {
+  switch (action.type) {
+    case SET_STROKE_DASHOFFSET: 
+      return Object.assign({}, state, {
+        offset: action.offset
+      })
+    default:
+      return state
+  } 
+}
